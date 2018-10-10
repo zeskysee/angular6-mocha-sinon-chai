@@ -1,4 +1,6 @@
-# Angular6MochaSinonChai
+# Angular 6 Mocha Sinon Chai
+
+This project try to change Angular 6 from jasmine to mocha sinon chai.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 

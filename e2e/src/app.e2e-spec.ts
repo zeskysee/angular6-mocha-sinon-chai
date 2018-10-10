@@ -1,4 +1,9 @@
 import { AppPage } from './app.po';
+import * as chai from 'chai';
+import * as chaiAsPromised from 'chai-as-promised';
+
+chai.use(chaiAsPromised);
+const expect = chai.expect;
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -9,6 +14,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to angular6-mocha-sinon-chai!');
+    expect(page.getParagraphText()).to.eventually.equal('Welcome to angular6-mocha-sinon-chai!');
   });
 });
